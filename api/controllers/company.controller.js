@@ -38,7 +38,7 @@ exports.findAll = (req, res) => {
         })
 }
 
-// idye sahip Firmau getir
+// idye sahip Firmayı getir
 exports.findOne = (req, res) => {
     company.findById(req.params.companyId)
         .then(company => {

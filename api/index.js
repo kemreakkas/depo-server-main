@@ -63,7 +63,6 @@ app.get('/api', (req, res) => {
 require('./routes/company.routes')(app)
 require('./routes/warehouse.routes')(app)
 require('./routes/sales.routes')(app)
-require('./routes/calendar.route')(app)
 // listen for requests
 app.listen( 3001, () => {
     console.log("Sunucu 3000 portunda hizmet vermekte.");

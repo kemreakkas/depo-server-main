@@ -38,13 +38,6 @@ app.get('/api', (req, res) => {
                 "post": "/api/company",
                 "update": "/api/company/:companyId",
             },
-            "sales": {
-                "get": "api/sales",
-                "get salesId": "/api/sales/:salesId",
-                "delete salesId": "/api/sales/:salesId",
-                "post": "/api/sales",
-                "update": "/api/sales/:salesId",
-            },
             "warehouse": {
                 "get": "api/warehouse",
                 "get warehouseId": "/api/warehouse/:warehouseId",

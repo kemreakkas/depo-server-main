@@ -3,11 +3,6 @@ const sales = require('../models/sales.model')
 
 exports.create = (req, res) => {
 
-    if(!req.body.name) {
-        return res.status(400).send({
-            message: "Firma ismi boş olamaz"
-        })
-    }
     new sales({
         productNumber: req.body.productNumber,
         productName: req.body.productName,

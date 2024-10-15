@@ -3,11 +3,6 @@ const warehouse = require('../models/warehouse.model')
 
 exports.create = (req, res) => {
 
-    if(!req.body.name) {
-        return res.status(400).send({
-            message: "Depo ismi boş olamaz"
-        })
-    }
     new warehouse({
         stockNumber: req.body.stockNumber,
         productName: req.body.productName,

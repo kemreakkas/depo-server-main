@@ -3,7 +3,7 @@ const company = require('../models/company.model')
 
 exports.create = (req, res) => {
 
-    if(!req.body.name) {
+    if(!req.body.companyName) {
         return res.status(400).send({
             message: "Firma ismi boş olamaz"
         })

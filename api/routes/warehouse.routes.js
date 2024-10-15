@@ -1,4 +1,3 @@
-const company = require("../controllers/warehouse.controller");
 module.exports = (app) => {
     const warehouse = require('../controllers/warehouse.controller')
 

@@ -51,6 +51,10 @@ app.get('/api', (req, res) => {
                 "delete warehouseId": "/api/warehouse/:warehouseId",
                 "post": "/api/warehouse",
                 "update": "/api/warehouse/:warehouseId",
+            },
+            "calendar": {
+                "get": "api/calendar",
+                "get calendar": "/api/calendar/:title",
             }
         },
     );
@@ -59,6 +63,7 @@ app.get('/api', (req, res) => {
 require('./routes/company.routes')(app)
 require('./routes/warehouse.routes')(app)
 require('./routes/sales.routes')(app)
+require('./routes/calendar.route')(app)
 // listen for requests
 app.listen( 3001, () => {
     console.log("Sunucu 3000 portunda hizmet vermekte.");
